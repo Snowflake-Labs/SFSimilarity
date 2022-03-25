@@ -31,7 +31,7 @@ https://commons.apache.org/proper/commons-text/userguide.html
 A good walkthrough of the algorithms with examples:
 https://apothem.blog/apache-commons-text.html#string-similarity
 
-### Installation
+### Installation: 
 
 Before creating the UDFs in Snowflake you need to upload the `sfsimilarity-1.0.jar`, `commons-lang3-3.12.0.jar` and `commons-text-1.9.jar`, download the binaries from https://github.com/andysanderson/SFSimilarity/releases/tag/v1.0.
 
@@ -42,7 +42,7 @@ put file:///Users/me/Documents/sfsimilarity/target/sfsimilarity-1.0.jar @udfstag
 
 Create the UDFs using the SQL in sfsimilarity/src/main/sql/SnowflakeSimilarity.sql
 
-### Compiling from source
+### Compiling from source: 
 Clone this folder
 
 Build the jar for the UDF functions using Maven:
