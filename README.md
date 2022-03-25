@@ -32,13 +32,8 @@ A good walkthrough of the algorithms with examples:
 https://apothem.blog/apache-commons-text.html#string-similarity
 
 ### Installation
-Clone this folder
 
-Build the jar for the UDF functions using Maven:
-```
-mvn package
-```
-Before creating the UDFs you need to upload the `sfsimilarity-1.0.jar`, `commons-lang3-3.12.0.jar` and `commons-text-1.9.jar`, the later ones are in the https://github.com/snowflakecorp/SV2021_fuzzy_matching/tree/main/sfsimilarity/lib folder.
+Before creating the UDFs in Snowflake you need to upload the `sfsimilarity-1.0.jar`, `commons-lang3-3.12.0.jar` and `commons-text-1.9.jar`, download the binaries from https://github.com/andysanderson/SFSimilarity/releases/tag/v1.0.
 
 To load a Jar to a stage using snowsql:
 ```
@@ -46,3 +41,12 @@ put file:///Users/me/Documents/sfsimilarity/target/sfsimilarity-1.0.jar @udfstag
 ````
 
 Create the UDFs using the SQL in sfsimilarity/src/main/sql/SnowflakeSimilarity.sql
+
+### Compiling from source
+Clone this folder
+
+Build the jar for the UDF functions using Maven:
+```
+mvn package
+```
+
