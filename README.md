@@ -34,7 +34,7 @@ and the list of **similarity scores** that we support follows:
 
 ### Installation: 
 
-Before creating the UDFs in Snowflake you need to upload the `sfsimilarity-1.0.jar`, `commons-lang3-3.12.0.jar` and `commons-text-1.9.jar`, download the binaries from the [Latest Release](https://github.com/andysanderson/SFSimilarity/releases/latest).
+Before creating the UDFs in Snowflake you need to upload the `sfsimilarity-1.0.jar`, `commons-lang3-3.12.0.jar` and `commons-text-1.9.jar`, download the binaries from the [Latest Release](https://github.com/Snowflake-Labs/SFSimilarity/releases/latest).
 
 1. First [create a stage](https://docs.snowflake.com/en/sql-reference/sql/create-stage.html) (or use an existing one) in Snowflake:
 ```
@@ -50,12 +50,12 @@ put file:///Users/me/Downloads/commons-text-1.9.jar @SFSimilarity/ AUTO_COMPRESS
 ````
 
 3. Create the UDFs using the SQL from the source code here: 
-  https://github.com/andysanderson/SFSimilarity/blob/main/src/main/sql/SFSimilarity.sql
+  https://github.com/Snowflake-Labs/SFSimilarity/blob/main/src/main/sql/SFSimilarity.sql
 
 ### Examples:
 
 Run the following examples to see how the functions work:
-  https://github.com/andysanderson/SFSimilarity/blob/main/src/main/sql/SFSimilarity_Examples.sql
+  https://github.com/Snowflake-Labs/SFSimilarity/blob/main/src/main/sql/SFSimilarity_Examples.sql
 
 
 ### Compiling from source: 
