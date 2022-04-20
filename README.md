@@ -44,9 +44,9 @@ create stage SFSimilarity
 
 To load the Jars to a Snowflake stage (for example @udfstage) using Snowsql:
 ```
-put file:///Users/me/Documents/sfsimilarity/sfsimilarity-1.0.jar @udfstage/ AUTO_COMPRESS = FALSE OVERWRITE = TRUE;
-put file:///Users/me/Documents/sfsimilarity/commons-lang3-3.12.0.jar @udfstage/ AUTO_COMPRESS = FALSE OVERWRITE = TRUE;
-put file:///Users/me/Documents/sfsimilarity/commons-text-1.9.jar @udfstage/ AUTO_COMPRESS = FALSE OVERWRITE = TRUE;
+put file:///Users/me/Documents/sfsimilarity/sfsimilarity-1.0.jar @SFSimilarity/ AUTO_COMPRESS = FALSE OVERWRITE = TRUE;
+put file:///Users/me/Documents/sfsimilarity/commons-lang3-3.12.0.jar @SFSimilarity/ AUTO_COMPRESS = FALSE OVERWRITE = TRUE;
+put file:///Users/me/Documents/sfsimilarity/commons-text-1.9.jar @SFSimilarity/ AUTO_COMPRESS = FALSE OVERWRITE = TRUE;
 ````
 
 Create the UDFs using the SQL from the source code in [sfsimilarity/src/main/sql/SnowflakeSimilarity.sql](https://github.com/andysanderson/SFSimilarity/blob/main/src/main/sql/SFSimilarity.sql)
