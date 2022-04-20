@@ -23,13 +23,7 @@ and the list of "similarity scores" that we support follows:
 - Fuzzy Score Similarity,
 - Jaccard Similarity,
 - Jaro-Winkler Similarity, and
-- Longest Common Subsequence Similarity.
-
-Underlying package java docs:
-https://commons.apache.org/proper/commons-text/userguide.html
-
-A good walkthrough of the algorithms with examples:
-https://apothem.blog/apache-commons-text.html#string-similarity
+- Longest Common Subsequence Similarity
 
 ### Installation: 
 
@@ -51,6 +45,12 @@ put file:///Users/me/Downloads/commons-text-1.9.jar @SFSimilarity/ AUTO_COMPRESS
 
 Create the UDFs using the SQL from the source code in [sfsimilarity/src/main/sql/SnowflakeSimilarity.sql](https://github.com/andysanderson/SFSimilarity/blob/main/src/main/sql/SFSimilarity.sql)
 
+### Examples:
+
+Run the following examples to see how the functions work:
+https://github.com/andysanderson/SFSimilarity/blob/main/src/main/sql/SFSimilarity_Examples.sql
+
+
 ### Compiling from source: 
 Clone this repository, then
 
@@ -59,3 +59,10 @@ Build the jar for the UDF functions using Maven:
 mvn package
 ```
 
+### Additional Resources:
+
+Underlying package java docs:
+https://commons.apache.org/proper/commons-text/userguide.html
+
+A good walkthrough of the algorithms with examples:
+https://apothem.blog/apache-commons-text.html#string-similarity
