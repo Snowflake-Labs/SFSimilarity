@@ -1,9 +1,9 @@
 # SFSimilarity
 
 ## Similarity and Distance functions for Snowflake
-Various different mechanisms of calculating "similarity scores" as well as "edit distances between Strings. 
+Various different mechanisms of calculating **similarity scores** as well as **edit distances** between Strings. 
 
-The list of "edit distances" that we currently support follow:
+The list of **edit distances** that we currently support follow:
 - Cosine Distance,
 - Hamming Distance,
 - Jaccard Distance,
@@ -11,21 +11,22 @@ The list of "edit distances" that we currently support follow:
 - Levenshtein Distance,
 - Longest Common Subsequence Distance,
 
-and the list of "similarity scores" that we support follows:
+and the list of **similarity scores** that we support follows:
 - Cosine Similarity,
 - Fuzzy Score Similarity,
 - Jaccard Similarity,
 - Jaro-Winkler Similarity, and
 - Longest Common Subsequence Similarity
-- 
-Note, the difference between a "similarity score" and a "distance function" is that a distance functions meets the following qualifications:
 
-- d(x,y) >= 0, non-negativity or separation axiom 
-- d(x,y) == 0, if and only if, x == y 
-- d(x,y) == d(y,x), symmetry, and 
-- d(x,z) <= d(x,y) + d(y,z), the triangle inequality 
 
-Whereas a "similarity score" need not satisfy all such properties. Though, it is fairly easy to "normalize" a similarity score to manufacture an "edit distance."  
+> **_NOTE:_** the difference between a "similarity score" and a "distance function" is that a distance functions meets the following qualifications:
+> 
+> - d(x,y) >= 0, non-negativity or separation axiom 
+> - d(x,y) == 0, if and only if, x == y 
+> - d(x,y) == d(y,x), symmetry, and 
+> - d(x,z) <= d(x,y) + d(y,z), the triangle inequality 
+> 
+> Whereas a "similarity score" need not satisfy all such properties. Though, it is fairly easy to "normalize" a similarity score to manufacture an "edit distance."  
 
 
 ### Installation: 
