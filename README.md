@@ -36,21 +36,20 @@ and the list of **similarity scores** that we support follows:
 
 Before creating the UDFs in Snowflake you need to upload the `sfsimilarity-1.0.jar`, `commons-lang3-3.12.0.jar` and `commons-text-1.9.jar`, download the binaries from the [Latest Release](https://github.com/andysanderson/SFSimilarity/releases/latest).
 
-[Create a stage](https://docs.snowflake.com/en/sql-reference/sql/create-stage.html) 
+1. First [create a stage](https://docs.snowflake.com/en/sql-reference/sql/create-stage.html) (or use an existing one) in Snowflake:
 ```
-create stage SFSimilarity 
- comment = 'Similarity and Distance functions for Snowflake';
+CREATE STAGE SFSimilarity 
+ COMMENT = 'Similarity and Distance functions for Snowflake';
 ```
- (or use an existing one) in Snowflake.
 
-To load the Jars to a Snowflake stage (for example @SFSimilarity) using Snowsql:
+2. Load the Jars to the Snowflake stage (for example @SFSimilarity) using Snowsql:
 ```
 put file:///Users/me/Downloads/sfsimilarity-1.0.jar @SFSimilarity/ AUTO_COMPRESS = FALSE OVERWRITE = TRUE;
 put file:///Users/me/Downloads/commons-lang3-3.12.0.jar @SFSimilarity/ AUTO_COMPRESS = FALSE OVERWRITE = TRUE;
 put file:///Users/me/Downloads/commons-text-1.9.jar @SFSimilarity/ AUTO_COMPRESS = FALSE OVERWRITE = TRUE;
 ````
 
-Create the UDFs using the SQL from the source code here: 
+3. Create the UDFs using the SQL from the source code here: 
   https://github.com/andysanderson/SFSimilarity/blob/main/src/main/sql/SFSimilarity.sql
 
 ### Examples:
