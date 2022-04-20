@@ -43,7 +43,7 @@ put file:///Users/me/Downloads/commons-lang3-3.12.0.jar @SFSimilarity/ AUTO_COMP
 put file:///Users/me/Downloads/commons-text-1.9.jar @SFSimilarity/ AUTO_COMPRESS = FALSE OVERWRITE = TRUE;
 ````
 
-Create the UDFs using the SQL from the source code in [sfsimilarity/src/main/sql/SnowflakeSimilarity.sql](https://github.com/andysanderson/SFSimilarity/blob/main/src/main/sql/SFSimilarity.sql)
+Create the UDFs using the SQL from the source code in https://github.com/andysanderson/SFSimilarity/blob/main/src/main/sql/SFSimilarity.sql
 
 ### Examples:
 
