@@ -33,7 +33,7 @@ https://apothem.blog/apache-commons-text.html#string-similarity
 
 ### Installation: 
 
-Before creating the UDFs in Snowflake you need to upload the `sfsimilarity-1.0.jar`, `commons-lang3-3.12.0.jar` and `commons-text-1.9.jar`, download the binaries from the [Latest Release](/releases).
+Before creating the UDFs in Snowflake you need to upload the `sfsimilarity-1.0.jar`, `commons-lang3-3.12.0.jar` and `commons-text-1.9.jar`, download the binaries from the [Latest Release](https://github.com/andysanderson/SFSimilarity/releases/tag/v1.0).
 
 [Create a stage](https://docs.snowflake.com/en/sql-reference/sql/create-stage.html) (or use an existing one) in Snowflake.
 
