@@ -36,7 +36,7 @@ create stage SFSimilarity
 ```
  (or use an existing one) in Snowflake.
 
-To load the Jars to a Snowflake stage (for example @udfstage) using Snowsql:
+To load the Jars to a Snowflake stage (for example @SFSimilarity) using Snowsql:
 ```
 put file:///Users/me/Downloads/sfsimilarity-1.0.jar @SFSimilarity/ AUTO_COMPRESS = FALSE OVERWRITE = TRUE;
 put file:///Users/me/Downloads/commons-lang3-3.12.0.jar @SFSimilarity/ AUTO_COMPRESS = FALSE OVERWRITE = TRUE;
