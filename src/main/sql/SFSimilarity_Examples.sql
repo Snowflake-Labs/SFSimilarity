@@ -23,7 +23,7 @@ SELECT LONGESTCOMMONSUBSEQUENCE($s1, $s2);
 
 -- The fuzzy score, a custom matching algorithm based on a specific locale (for lowercasing), where one point is given for every matched character and subsequent matches yield two bonus points; 
 -- the second string is treated as a query on the first string, so long common character sequences get a higher score:
-SELECT FUZZYSCORE($s1, $s2);
+SELECT FUZZYSCORE($s1, $s2, 'ENGLISH');
 
 
 ----------------------------
