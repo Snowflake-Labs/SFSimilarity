@@ -60,7 +60,7 @@ Run the following examples to see how the functions work:
 
 
 ### Compiling from source: 
-Clone this repository, then
+To compile from source, first clone this repository, then
 
 Build the jar for the UDF functions using Maven:
 ```
