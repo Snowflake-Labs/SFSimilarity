@@ -64,7 +64,7 @@ SELECT HAMMINGDISTANCE($s1, $s2);
 -- The Jaccard distance, defined as 1 - Jaccard similarity, hence 1 - 0.777777... = 0.222222...:
 SELECT JACCARDDISTANCE($s1, $s2);
 
--- the Jaro-Winkler distance, defined as 1 - Jaro-Winkler similarity, hence it should be 1 - 0.825 = 0.175 but it is not at the moment (see the Jira ticket):
+-- the Jaro-Winkler distance, defined as 1 - Jaro-Winkler similarity, hence it should be 1 - 0.825 = 0.175 but it is not at the moment (see https://issues.apache.org/jira/browse/TEXT-104):
 SELECT JAROWINKLERDISTANCE($s1, $s2);
 
 -- The longest common subsequence (LCS) distance, defined as the difference between the sum of the lengths of the compared strings minus twice their LCS similarity, hence 10 + 10 - 2 * 6 = 8:
