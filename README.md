@@ -44,7 +44,7 @@ put file:///Users/me/Documents/sfsimilarity/commons-lang3-3.12.0.jar @udfstage/ 
 put file:///Users/me/Documents/sfsimilarity/commons-text-1.9.jar @udfstage/ AUTO_COMPRESS = FALSE OVERWRITE = TRUE;
 ````
 
-Create the UDFs using the SQL from the source code in sfsimilarity/src/main/sql/SnowflakeSimilarity.sql
+Create the UDFs using the SQL from the source code in [sfsimilarity/src/main/sql/SnowflakeSimilarity.sql](https://github.com/andysanderson/SFSimilarity/blob/main/src/main/sql/SFSimilarity.sql)
 
 ### Compiling from source: 
 Clone this repository, then
