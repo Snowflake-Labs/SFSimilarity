@@ -33,17 +33,21 @@ https://apothem.blog/apache-commons-text.html#string-similarity
 
 ### Installation: 
 
-Before creating the UDFs in Snowflake you need to upload the `sfsimilarity-1.0.jar`, `commons-lang3-3.12.0.jar` and `commons-text-1.9.jar`, download the binaries from https://github.com/andysanderson/SFSimilarity/releases/tag/v1.0.
+Before creating the UDFs in Snowflake you need to upload the `sfsimilarity-1.0.jar`, `commons-lang3-3.12.0.jar` and `commons-text-1.9.jar`, download the binaries from /releases/tag/v1.0.
 
-To load a Jar to a stage using snowsql:
+[Create a stage](https://docs.snowflake.com/en/sql-reference/sql/create-stage.html) (or use an existing one) in Snowflake.
+
+To load the Jars to a Snowflake stage (for example @udfstage) using Snowsql:
 ```
-put file:///Users/me/Documents/sfsimilarity/target/sfsimilarity-1.0.jar @udfstage/ AUTO_COMPRESS = FALSE OVERWRITE = TRUE;
+put file:///Users/me/Documents/sfsimilarity/sfsimilarity-1.0.jar @udfstage/ AUTO_COMPRESS = FALSE OVERWRITE = TRUE;
+put file:///Users/me/Documents/sfsimilarity/commons-lang3-3.12.0.jar @udfstage/ AUTO_COMPRESS = FALSE OVERWRITE = TRUE;
+put file:///Users/me/Documents/sfsimilarity/commons-text-1.9.jar @udfstage/ AUTO_COMPRESS = FALSE OVERWRITE = TRUE;
 ````
 
-Create the UDFs using the SQL in sfsimilarity/src/main/sql/SnowflakeSimilarity.sql
+Create the UDFs using the SQL from the source code in sfsimilarity/src/main/sql/SnowflakeSimilarity.sql
 
 ### Compiling from source: 
-Clone this folder
+Clone this repository, then
 
 Build the jar for the UDF functions using Maven:
 ```
